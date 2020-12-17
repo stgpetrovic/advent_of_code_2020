@@ -185,7 +185,7 @@ int64_t MyTicket(const std::vector<std::string>& entries) {
   std::vector<absl::flat_hash_set<std::string>> isec(tickets.size());
 
   for (int i = 0; i < t.size(); ++i) {
-    isec[i] = t[i][0];
+    isec[i] = t[0][i];
   }
 
   for (int i = 0; i < t.size(); ++i) {
